@@ -2,8 +2,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const path = require("fs");
+
 //create variable introduce createMarkdown.js file
-const createMarkdown = require("createMarkdown");
+var createMarkdown = require("./createMarkdown");
 
 //need function to take user info
 function writeFile(fileName, data) {
@@ -49,12 +51,11 @@ function init() {
             name: "tests",
             message: "Enter the test instructions"
         },
-    ])    
+    ]).then(function(data)  {
 
-//need to enter prompted questions here. use inquirer.prompt
-      console.log(fileName);
-//need to store user input data  
-//notify user
-//write info to file
+    //
+    writeToFile("README.md", createMarkdown({...data}));
+    });    
+
 //  call to initialize program
 init()}}

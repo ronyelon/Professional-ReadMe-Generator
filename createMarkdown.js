@@ -1,5 +1,5 @@
 // creates markdown for read me
-function generateMarkdown(data) {
+function createMarkdown(data) {
 
     // returns inquirer data.
     return `# ${data.title}
@@ -31,4 +31,4 @@ function generateMarkdown(data) {
   }
 
   // exports the createMarkdown information
-  module.exports = generateMarkdown;
+  module.exports = createMarkdown;
