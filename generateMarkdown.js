@@ -4,7 +4,7 @@ return `# ${data.title}
   ----
   <a href="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"><img src="https://img.shields.io/badge/License-${data.license[0]}-brightgreen"></a>
 
-  
+
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -35,7 +35,7 @@ return `# ${data.title}
   ### Questions? Contact me below
   - [Github Profile](https://github.com/${data.username})
   - ${data.email}
-
+ 
   `;
   }
 
