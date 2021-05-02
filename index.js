@@ -7,8 +7,8 @@ const path = require("fs");
 //create variable introduce createMarkdown.js file
 var createMarkdown = require("./createMarkdown");
 
-//need function to take user info
-function writeFile(fileName, data) {
+//function to take user info
+function writeToFile(fileName, data) {
 
 //initalize program
 function init() {
@@ -50,12 +50,13 @@ function init() {
             type: "input",
             name: "tests",
             message: "Enter the test instructions"
-        },
-    ]).then(function(data)  {
+        }
 
-    //
-    writeToFile("README.md", createMarkdown({...data}));
-    });    
-
-//  call to initialize program
-init()}}
+    ]).then(function(data) {
+        console.log("Creating the Markdown...");
+        // calling function writeToFile(fileName, data) using "README.md" and generateMarkdown(data) parameters & uses a spread opperater to spread data. 
+        writeToFile("README.md", createMarkdown({...data}));  
+});
+}
+// function call to initialize program
+init()}
