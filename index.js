@@ -1,15 +1,21 @@
-//create the variable and introduce Inquirer
+//Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
 const path = require("fs");
 
 //create variable introduce createMarkdown.js file
-var createMarkdown = require("./createMarkdown");
+var generateMarkdown = require("./generateMarkdown");
 
-//function to take user info
+//Create a function to write README file
 function writeToFile(fileName, data) {
-
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Markdown file created')
+    });   
+}
 //initalize program
 function init() {
 
@@ -51,12 +57,13 @@ function init() {
             name: "tests",
             message: "Enter the test instructions"
         }
+    ])
 
-    ]).then(function(data) {
-        console.log("Creating the Markdown...");
-        // calling function writeToFile(fileName, data) using "README.md" and generateMarkdown(data) parameters & uses a spread opperater to spread data. 
-        writeToFile("README.md", createMarkdown({...data}));  
+    .then(function(data) {
+        
+        // calling function 
+        writeToFile("README.md", generateMarkdown({...data}));  
 });
 }
 // function call to initialize program
-init()}
+init()
