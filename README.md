@@ -18,11 +18,13 @@
   You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
 
   ### Installation
-  The application will be invoked by using the following command:
-  node index.js
+  Node.js installation is required prior to use. Download the Inquirer package. 
+  The application will be invoked by using the following command: node index.js
 
   ### Usage
-  When node index.js is run the application uses the inquirer package to provide a set of prompts in the command line with a series of questions about your Github and about your Github project. Answer the prompted questions and click enter to move to the next question. Once you have answered all the questions a markdown page will be generated. 
+  When node index.js is run the application uses the inquirer package to provide a set of prompts in the command line with a series of questions about your Github and about your Github project. Answer the prompted questions and click enter to move to the next question. Once you have answered all the questions a markdown page will be generated.
+
+
 
   ### Contribution
   If you would like to contribute to this project please let me know! Contact information is below.
@@ -35,6 +37,6 @@
 
   ### Questions? Contact me below
   - [Github Profile](https://github.com/ronyelon)
-  - RonyBraswell@Hotmail.com
+  - RonyBraswell@hotmail.com
  
   
