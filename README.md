@@ -27,7 +27,7 @@
 ![WalkThru](https://github.com/ronyelon/Professional-ReadMe-Generator/blob/main/Images/ReadMe-Generator.gif)
 
 
-![Screenshot-Generated-ReadMe](https://github.com/ronyelon/Professional-ReadMe-Generator/blob/main/Images/ScreenShit-Generated-ReadMe.PNG)
+![Screenshot-Generated-ReadMe](https://github.com/ronyelon/Professional-ReadMe-Generator/blob/main/Images/ScreenShot-Generated-ReadMe.PNG)
 
 
   ### Contribution
