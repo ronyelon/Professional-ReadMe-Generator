@@ -24,7 +24,7 @@
   ### Usage
   When node index.js is run the application uses the inquirer package to provide a set of prompts in the command line with a series of questions about your Github and about your Github project. Answer the prompted questions and click enter to move to the next question. Once you have answered all the questions a markdown page will be generated.
 
-
+![WalkThru](https://github.com/ronyelon/Professional-ReadMe-Generator/blob/main/Images/ReadMe-Generator.gif)
 
   ### Contribution
   If you would like to contribute to this project please let me know! Contact information is below.
