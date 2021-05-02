@@ -69,10 +69,16 @@ function init() {
             name: "username",
             message: "Enter your Guthub username"
         },
-
-
+        {
+            //license info
+            type: "list",
+            name: "license",
+            message: "Choose the license for your project",
+            choices: ["None", "Apache2.0", "GNU Public v3.0", "MIT", "Boost Software 1.0", "Creative Commons Zero v1.0 Universal",              "Eclipse Public 2.0", "GNU Affero General Public v3.0", "GNU General Public v2.0", "GNU Lesser General Public v2.1", 
+            "Mozilla Public 2.0", "the Unilicense"]
+        }
     ])
-
+    //user info stored
     .then(function(data) {
         
         // calling function 
