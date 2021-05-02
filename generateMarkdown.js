@@ -37,6 +37,10 @@ return `# ${data.title}
   ### Test-Instructions
   ${data.tests}
 
+  ### Questions?
+  - [Github Profile](https://github.com/${data.username})
+  - ${data.email}
+
   `;
   }
 

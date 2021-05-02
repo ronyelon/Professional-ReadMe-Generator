@@ -56,7 +56,21 @@ function init() {
             type: "input",
             name: "tests",
             message: "Enter the test instructions"
-        }
+        },
+        {
+            //enter email address
+            type: "input",
+            name: "email",
+            message: "Enter your email address"
+        },
+        {
+            //enter github info
+            type: "input",
+            name: "username",
+            message: "Enter your Guthub username"
+        },
+
+
     ])
 
     .then(function(data) {
